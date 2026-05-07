@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Toggle</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <link href="./index.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <div class="flex flex-col md:flex-row w-full h-full">
+      <aside class="bg-gray-100 py-5 pl-6 pr-20 md:w-[20%] md:h-screen flex justify-between md:block items-start">
+        <div>
+          <h1 class="text-xl lg:text-4xl whitespace-nowrap font-bold">
+            JS Docs
+          </h1>
+
+          <ul class="mt-5 pl-8 flex flex-col gap-3 text-lg">
+            <li>Introduction</li>
+            <li>Variables</li>
+            <li>Functions</li>
+            <li>DOM</li>
+          </ul>
+        </div>
+
+        <button
+          class="theme-toggle md:ml-5 p-1 px-3 cursor-pointer border-gray-700 border-4 bg-[#000000c6] text-white rounded block md:hidden"
+        >
+          Toggle Theme
+        </button>
+      </aside>
+      <div class="w-full h-full p-7">
+        <header class="flex justify-between">
+          <h1 class="text-3xl lg:text-5xl font-bold">
+            Introduction to JavaScript
+          </h1>
+          <button
+            class="theme-toggle ml-5 p-1 px-3 cursor-pointer border-gray-700 border-4 bg-[#000000c6] text-white rounded hidden md:block"
+          >
+            Toggle Theme
+          </button>
+        </header>
+
+        <main class="mt-5">
+          <section>
+            <p class="text-lg">theme icon</p>
+            <h2 class="text-3xl lg:text-4xl mt-4">What is JavaScrirpt?</h2>
+            <p class="text-lg mt-3">
+              JavaScript is a high-level, interpreted programming language used
+              to create interactive and dynamic content on web pges. It runs
+              directly in the browser and is one of the core technologies of the
+              web alongside HTML and CSS.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="lg:text-4xl text-3xl mt-7">Why Learn JavaScript?</h2>
+            <ul class="mt-2 pl-4 flex gap-1 flex-col">
+              <li>Enables dynamic and interactive websites</li>
+              <li>Works seamlessly with HTML and CSS</li>
+              <li>Used in frontend and backend development</li>
+              <li>Large community and ecosystem</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="lg:text-4xl text-3xl mt-8">Basic Syntax</h2>
+            <p class="text-lg mt-3">
+              JavaScript syntax is the set of rules that define a correctly
+              structure program.
+            </p>
+
+            <div class="bg-black py-5 px-4 mt-3">
+              <h3 class="text-md text-green-500">
+                let message = "Hello World"
+              </h3>
+              <p class="text-lg mt-1 text-green-500">console.log(message)</p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
