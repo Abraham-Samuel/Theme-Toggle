@@ -559,3 +559,24 @@
     }
   }
 }
+
+/* toggle theme */
+body {
+  background-color: #ffffff;
+  color: #111827;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.dark {
+  background-color: #0b1220;
+  color: #f9fafb;
+}
+
+body.dark aside {
+  background-color: #1f2937;
+}
+
+body.dark .bg-black {
+  background-color: #05070a;
+}
+
